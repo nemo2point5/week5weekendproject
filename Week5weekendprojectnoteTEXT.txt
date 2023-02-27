@@ -1,0 +1,57 @@
+-Salesperson
+ - first_name
+ - last_name
+ - sale_date (Foreign Key)
+ - salesperson_id (Primary Key)
+
+-Sales Invoice
+ - invoice_id (Primary Key)
+ - sale-date
+ - car_id
+ - customer_id
+ - salesperson_id
+
+-Car
+ - car_id (Primary Key)
+ - vin_num
+ - make
+ - color
+ - year
+ - model
+
+-Customer
+ - customer_id (Primary Key)
+ - first_name
+ - last_name
+ - phone_number
+ - address
+ - city
+ - state
+ - zip_code
+
+-Service Ticket
+ - mechanic_id (Primary Key)
+ - car_id
+ - service_total
+ - customer_id
+ - serviceticket_id
+ - date_recieved
+ - return_date
+ - comment
+
+-Services
+ - service_total (Primary Key)
+ - price
+ - provided_services
+
+-Mechanic
+ - mechanic_id (Primary Key)
+ - first_name
+ - last_name
+
+-Service Mechanic
+ - servicemechanic_id (Primary Key)
+ - price
+ - serviceticket_id
+ - mechanic_id
+ - comments
